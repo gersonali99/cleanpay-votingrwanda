@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanPay Voting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/header-logo.png" alt="CleanPay Logo">
+        </div>
+    </header>
+
+    <main>
+        <!-- Project Summary Section -->
+        <section class="project-summary">
+            <p>
+                CleanPay is a simple waste management system that ensures fairness in how people pay for garbage collection. 
+                After making one payment, you get 4 or more collection counts each month, depending on the company's agreement with you. 
+                You won’t need to pay again for 30 days unless you use up all your collection counts. 
+                Every time your garbage is collected, a count is removed from your card. Once all your counts are used, you’ll need to pay again. 
+                This system helps make sure everyone pays fairly and only for the services they use.
+            </p>
+        </section>
+
+        <!-- Voting Section -->
+        <section class="vote-section">
+            <h1>Do you support the implementation of CleanPay?</h1>
+            <div class="vote-buttons">
+                <button id="yesVote">Yes</button>
+                <button id="noVote">No</button>
+            </div>
+
+            <!-- Display the number of Yes and No votes -->
+            <div id="voteResult">
+                <p>Yes votes: <span id="yesCount">0</span></p>
+                <p>No votes: <span id="noCount">0</span></p>
+            </div>
+
+            <!-- Comment Section for No Vote -->
+            <div id="commentSection" class="hidden">
+                <h2>Please tell us why you voted No:</h2>
+                <textarea id="noComment" rows="4" placeholder="Enter your comment"></textarea>
+                <button id="submitComment">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="images/footer-image.png" alt="Footer Image">
+            <p>Contact us: +250791240557 | gersonali99@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
